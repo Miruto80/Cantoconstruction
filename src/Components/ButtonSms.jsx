@@ -3,7 +3,7 @@ import React from 'react';
 import '../assets/css/ButtonSms.css';
 
 const SmsButton = () => {
-  const phoneNumber = '+584245127864';
+  const phoneNumber = '+17327106539';
   const message = encodeURIComponent("Hi, I’m interested in your construction services.");
 
   return (
