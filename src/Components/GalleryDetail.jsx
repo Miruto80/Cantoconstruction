@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import '../assets/css/GalleryDetail.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/splide/dist/css/splide.min.css'
+import defotos from '../assets/data/defotos'
 
 export default function GalleryDetail() {
   const { category } = useParams()
@@ -11,12 +12,11 @@ export default function GalleryDetail() {
   const [startIndex, setStartIndex] = useState(0)
 
   useEffect(() => {
-    const count = 6
-    const imgs = []
-    for (let i = 1; i <= count; i++) {
-      imgs.push(`/img/${category}/${i}.webp`)
+    if (defotos[category]) {
+      setImages(defotos[category])
+    } else {
+      setImages([])
     }
-    setImages(imgs)
   }, [category])
 
   const openCarousel = (index) => {
@@ -30,11 +30,11 @@ export default function GalleryDetail() {
 
   return (
     <div className="container py-4">
-      <h2 className="mb-4 text-capitalize text-center"><b>{category} Gallery</b></h2>
+      <h2 className="mb-4 text-capitalize text-center"><b>{category.replace('_', ' ')} Gallery</b></h2>
       <div className="row">
         {images.map((img, idx) => (
           <div className="col-md-4 mb-4" key={idx}>
-           <div className="card h-100 shadow-sm gallery-card" onClick={() => openCarousel(idx)} style={{ cursor: 'pointer' }}>
+            <div className="card h-100 shadow-sm gallery-card" onClick={() => openCarousel(idx)} style={{ cursor: 'pointer' }}>
               <img src={img} alt={`work ${idx}`} className="card-img-top" />
             </div>
           </div>
