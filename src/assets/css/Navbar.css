@@ -25,3 +25,7 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #d4af37 !important; /* Dorado */
 }
+
+.navbar-toggler {
+  margin-right: 20px; /* o el valor que prefieras */
+}

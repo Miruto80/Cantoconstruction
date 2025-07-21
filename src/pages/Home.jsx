@@ -75,6 +75,54 @@ export default function Home() {
         </Splide>
         <div className="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
       </section>
+      <section className="about-section bg-light py-5">
+  <div className="container">
+    <h2 className="text-center mb-4">Welcome to Canto Construction LLC</h2>
+    <h5 className="text-center text-muted mb-4">
+      Family-Owned Construction & Restoration Experts
+    </h5>
+    <div className="row justify-content-center">
+  <div className="col-lg-10 styled-about-text">
+    <p className="lead mb-4">
+      At <strong>Canto Construction LLC</strong>, we take pride in being a family-owned and operated construction company
+      serving our community with honesty, quality, and care. With years of hands-on experience, we specialize in:
+    </p>
+    <ul className="custom-list mb-4">
+      <li>Interior Remodeling</li>
+      <li>Home Renovations</li>
+      <li>General Repairs</li>
+      <li>Painting Services</li>
+      <li>Water Damage Restoration</li>
+      <li>Structural Drying</li>
+      <li>Mold Mediation</li>
+      <li>Vinyl Flooring Installation</li>
+      <li>Trim and Molding Work</li>
+    </ul>
+    <p className="mb-4">
+      We’re passionate about transforming houses into homes. Whether you’re remodeling your kitchen, restoring water
+      damage, or giving your space a new look, we treat every project as if it were our own.
+    </p>
+    <h5 className="mt-5 mb-3">Why Choose Canto Construction LLC?</h5>
+    <ul className="custom-list checkmark-list mb-4">
+      <li>Family-Owned & Trusted</li>
+      <li>Licensed & Insured</li>
+      <li>Reliable, Honest Service</li>
+      <li>High-Quality Workmanship</li>
+      <li>Free Estimates</li>
+    </ul>
+    <p className="mt-4 fw-bold mb-4">
+      Let’s build something great together. Contact us today for a free consultation!
+    </p>
+    <p className="contact-info">
+      📞 <a href="tel:7327106539">732-710-6539</a><br />
+      📧 <a href="mailto:cantoconstructionllc27@gmail.com">cantoconstructionllc27@gmail.com</a><br />
+      📍 Proudly serving New Jersey
+    </p>
+  </div>
+</div>
+  </div>
+</section>
+
       <section class="services-section py-5">
   <div class="container">
     <h2 class="text-center mb-4">Our Services</h2>

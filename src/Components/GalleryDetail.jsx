@@ -30,7 +30,9 @@ export default function GalleryDetail() {
 
   return (
     <div className="container py-4">
-      <h2 className="mb-4 text-capitalize text-center"><b>{category.replace('_', ' ')} Gallery</b></h2>
+      <h2 className="mb-4 text-capitalize text-center">
+        <b>{category.replace('_', ' ')} Gallery</b>
+      </h2>
       <div className="row">
         {images.map((img, idx) => (
           <div className="col-md-4 mb-4" key={idx}>
@@ -42,9 +44,8 @@ export default function GalleryDetail() {
       </div>
 
       {showCarousel && (
-        <div className="carousel-modal">
-          <div className="carousel-backdrop" onClick={closeCarousel}></div>
-          <div className="carousel-content">
+        <div className="carousel-modal" onClick={closeCarousel}>
+          <div className="carousel-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-btn" onClick={closeCarousel}>✖</button>
             <Splide
               options={{
@@ -54,10 +55,11 @@ export default function GalleryDetail() {
                 cover: true,
                 arrows: true,
               }}
+              aria-label="Gallery slides"
             >
               {images.map((img, idx) => (
                 <SplideSlide key={idx}>
-                  <img src={img} alt={`slide ${idx}`} className="img-fluid" />
+                  <img src={img} alt={`slide ${idx}`} className="carousel-image" />
                 </SplideSlide>
               ))}
             </Splide>
