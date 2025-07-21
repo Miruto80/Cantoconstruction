@@ -9,6 +9,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Footer from './Components/Footer.jsx';
 import AnimatedRoutes from './Components/AnimatedRoutes.jsx';
 import Buttonsms from './Components/ButtonSms.jsx';
+import ChatBot from './Components/ChatBot.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
       <AnimatedRoutes />
       <Footer />
       <Buttonsms />
+      <ChatBot />
     </BrowserRouter>
   </StrictMode>,
 )
