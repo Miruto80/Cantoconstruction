@@ -85,7 +85,7 @@ export default function Contact() {
       {/* Formulario y Imagen */}
       <div className="row align-items-center">
         <div className="col-md-6 mb-4">
-          <h2 className="mb-4">Contact Us</h2>
+          <h2 className="mb-4 text-center">Contact Us</h2>
           {state.succeeded ? (
             <div className="alert alert-success" role="alert">
               Thank you for your message! We will get back to you soon.
@@ -163,7 +163,7 @@ export default function Contact() {
                 <ValidationError prefix="Message" field="message" errors={state.errors} />
               </div>
 
-              <button type="submit" className="btn btn-primary px-5" disabled={state.submitting}>
+              <button type="submit" className="btn btn-primary px-5 mx-auto d-block" disabled={state.submitting}>
                 {state.submitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
