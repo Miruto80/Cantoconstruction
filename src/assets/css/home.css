@@ -224,10 +224,10 @@ h5 {
   color: #333;
 }
 
-.services-section i {
+i {
   transition: transform 0.3s ease;
 }
 
-.services-section i:hover {
+i:hover {
   transform: scale(1.1);
 }
