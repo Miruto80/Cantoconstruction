@@ -1,8 +1,7 @@
 .sms-button-fixed-center {
   position: fixed;
   bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 20px; /* ⬅️ Anclado a la izquierda */
   z-index: 9999;
   padding: 12px 24px;
   background-color: #0782fa;
@@ -29,4 +28,3 @@
     display: none;
   }
 }
-
