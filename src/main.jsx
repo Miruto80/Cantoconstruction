@@ -10,12 +10,14 @@ import Footer from './Components/Footer.jsx';
 import AnimatedRoutes from './Components/AnimatedRoutes.jsx';
 import Buttonsms from './Components/ButtonSms.jsx';
 import ChatBot from './Components/ChatBot.jsx';
+import ScrollToTop from './Components/ScrollToTop.jsx';
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Navbar />
+      <ScrollToTop />
       <AnimatedRoutes />
       <Footer />
       <Buttonsms />

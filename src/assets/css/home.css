@@ -264,3 +264,27 @@ i:hover {
   color: #7a6a2a;
   text-decoration: underline;
 }
+
+.gallery-preview-section {
+  background: #111;
+}
+
+.gallery-preview-section h2 {
+  font-weight: bold;
+}
+
+.highlight-image-wrapper {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.highlight-image-wrapper img {
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.highlight-image-wrapper img:hover {
+  transform: scale(1.05);
+}

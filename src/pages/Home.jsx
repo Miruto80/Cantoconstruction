@@ -187,6 +187,49 @@ export default function Home() {
     </div>
   </div>
 </section>
+<section className="gallery-preview-section bg-dark py-5">
+  <div className="container">
+    <h2 className="text-white text-center mb-4">Project Highlights</h2>
+    <Splide
+      options={{
+        type: 'loop',
+        autoplay: true,
+        interval: 3000,
+        pauseOnHover: false,
+        arrows: false,
+        pagination: false,
+        gap: '1rem',
+        perPage: 3,
+        breakpoints: {
+          992: { perPage: 2 },
+          576: { perPage: 1 },
+        },
+      }}
+      aria-label="Gallery Highlights"
+    >
+      {[
+        '/img/living_rooms/1.webp',
+        '/img/bathrooms/1.webp',
+        '/img/kitchens/2.webp',
+        '/img/stairs/5.webp',
+        '/img/living_rooms/2.webp',
+        '/img/bathrooms/2.webp'
+      ].map((img, idx) => (
+        <SplideSlide key={idx}>
+          <div className="highlight-image-wrapper">
+            <img src={img} alt={`Highlight ${idx}`} className="w-100 rounded shadow" />
+          </div>
+        </SplideSlide>
+      ))}
+    </Splide>
+    <div className="text-center mt-4">
+      <Link to="/gallery" className="btn btn-light btn-lg px-5 py-3 fw-bold">
+        View Full Gallery
+      </Link>
+    </div>
+  </div>
+</section>
+
       </div>
   );
 }
