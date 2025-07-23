@@ -217,7 +217,7 @@ export default function Home() {
       ].map((img, idx) => (
         <SplideSlide key={idx}>
           <div className="highlight-image-wrapper">
-            <img src={img} alt={`Highlight ${idx}`} className="w-100 rounded shadow" />
+            <img src={img} alt={`Highlight ${idx}`} className="w-100 rounded shadow" loading="lazy" />
           </div>
         </SplideSlide>
       ))}

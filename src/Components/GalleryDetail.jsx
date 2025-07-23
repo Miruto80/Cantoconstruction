@@ -37,7 +37,7 @@ export default function GalleryDetail() {
         {images.map((img, idx) => (
           <div className="col-md-4 mb-4" key={idx}>
             <div className="card h-100 shadow-sm gallery-card" onClick={() => openCarousel(idx)} style={{ cursor: 'pointer' }}>
-              <img src={img} alt={`work ${idx}`} className="card-img-top" />
+              <img src={img} alt={`work ${idx}`} className="card-img-top" loading="lazy" />
             </div>
           </div>
         ))}
@@ -59,7 +59,7 @@ export default function GalleryDetail() {
             >
               {images.map((img, idx) => (
                 <SplideSlide key={idx}>
-                  <img src={img} alt={`slide ${idx}`} className="carousel-image" />
+                  <img src={img} alt={`slide ${idx}`} className="carousel-image" loading="lazy" />
                 </SplideSlide>
               ))}
             </Splide>
