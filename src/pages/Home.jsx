@@ -151,22 +151,38 @@ export default function Home() {
           damage, or giving your space a new look, we treat every project as if it were our own.
         </p>
 
-        <h5 className="mt-5 mb-3">Why Choose Canto Construction LLC?</h5>
-        <ul className="custom-list checkmark-list mb-4">
-          <li>Family-Owned & Trusted</li>
-          <li>Licensed & Insured</li>
-          <li>Reliable, Honest Service</li>
-          <li>High-Quality Workmanship</li>
-          <li>Free Estimates</li>
-        </ul>
-        <p className="mt-4 fw-bold mb-4">
-          Let’s build something great together. Contact us today for a free consultation!
-        </p>
-        <p className="contact-info">
-          📞 <a href="tel:7327106539">732-710-6539</a><br />
-          📧 <a href="mailto:cantoconstructionllc27@gmail.com">cantoconstructionllc27@gmail.com</a><br />
-          📍 Proudly serving New Jersey
-        </p>
+        <h5 className="mt-5 mb-3 text-center">Why Choose Canto Construction LLC?</h5>
+        <div className="row g-3 mb-4">
+  {[
+    "Family-Owned & Trusted",
+    "Licensed & Insured",
+    "Reliable, Honest Service",
+    "High-Quality Workmanship",
+    "Free Estimates"
+  ].map((reason, idx) => (
+    <div className="col-md-6 col-lg-4" key={idx}>
+      <div className="card reason-card shadow-sm h-100">
+        <div className="card-body d-flex align-items-center justify-content-center text-center">
+          <p className="mb-0 fw-semibold">{reason}</p>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+        <div className="contact-box text-center mt-5 py-4 px-3 rounded">
+  <h5 className="fw-bold mb-3">Get in Touch</h5>
+  <p className="mb-2">
+    📞 <a href="tel:7327106539">732-710-6539</a>
+  </p>
+  <p className="mb-2">
+    📧 <a href="mailto:cantoconstructionllc27@gmail.com">cantoconstructionllc27@gmail.com</a>
+  </p>
+  <p className="mb-0">
+    📍 Proudly serving <strong>New Jersey</strong>
+  </p>
+</div>
+
       </div>
     </div>
   </div>
