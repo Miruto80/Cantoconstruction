@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import Swal from 'sweetalert2';
+import '../assets/css/contact.css';
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mnnzjoay");
@@ -74,11 +75,14 @@ export default function Contact() {
     <div className="container py-5">
       {/* Métodos de contacto */}
       <div className="d-flex justify-content-center mb-4 gap-4 flex-wrap">
+        <a href="https://wa.me/17327106539" target="_blank" rel="noopener noreferrer" className="btn btn-outline-success d-flex align-items-center gap-2">
+          <i className="fab fa-whatsapp"></i> WhatsApp
+        </a>
         <a href="tel:+17327106539" className="btn btn-outline-primary d-flex align-items-center gap-2">
           <i className="fas fa-phone"></i> +1 732 710 6539
         </a>
-        <a href="https://wa.me/17327106539" target="_blank" rel="noopener noreferrer" className="btn btn-outline-success d-flex align-items-center gap-2">
-          <i className="fab fa-whatsapp"></i> WhatsApp
+        <a href="https://www.instagram.com/cantoconstructionllc_?igsh=aXBhMDRyNGZ2d2R2" className="btn btn-outline-purple d-flex align-items-center gap-2">
+          <i className="fa-brands fa-instagram"></i> Instagram
         </a>
       </div>
 
