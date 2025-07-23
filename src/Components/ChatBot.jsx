@@ -29,7 +29,7 @@ function getAnswer(userQuestion) {
 }
 
 const welcomeText = `Hi! How can I help you? Use 'Contact' if you want to talk to us directly.`;
-const FORM_ENDPOINT = "https://formspree.io/f/xnnvzelr";
+const FORM_ENDPOINT = "https://formspree.io/f/xeozadjp";
 
 const ChatBot = () => {
   const [messages, setMessages] = useState([
