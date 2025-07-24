@@ -71,7 +71,7 @@
   text-shadow: 0 4px 16px rgba(0,0,0,0.25);
 }
 .btn-gold-dark {
-  background: linear-gradient(90deg, #444444 0%, #bfa46f 100%);
+  background: linear-gradient(90deg, #2f2f2f 0%, #d4af37 100%);
   color: #fff !important;
   border: none;
   border-radius: 30px;
@@ -83,10 +83,10 @@
 }
 
 .btn-gold-dark:hover {
-  transform: translateY(-2px) scale(1.03);
-  background: linear-gradient(90deg, #2f2f2f 0%, #d4af37 100%);
-  color: #fff;
-  box-shadow: 0 6px 24px rgba(191, 164, 111, 0.5);
+  transform: translateY(-2px) scale(1.05);
+  background: linear-gradient(90deg, #1c1c1c 0%, #a98c2c 100%);
+  color: #f1e7c6;
+  box-shadow: 0 8px 28px rgba(169, 140, 44, 0.4);
 }
 
 
