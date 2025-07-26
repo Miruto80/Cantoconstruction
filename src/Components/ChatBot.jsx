@@ -1,21 +1,51 @@
 import React, { useState } from "react";
 
 const qaPairs = [
-  { keywords: ["hours", "hour", "schedule", "time"], answer: "Our operation hours are Monday to Saturday, 9am to 10pm, and Sunday, 10am to 6pm." },
-  { keywords: ["inventory", "stock"], answer: "You can see our full inventory in the 'Inventory' section of the website." },
-  { keywords: ["trade in", "trade", "exchange"], answer: "Yes, we accept your car as a trade-in towards your purchase." },
-  {keywords: ["in house financing","bank","finance","buy here pay here","lender","lenders","financing","do you offer financing"],answer: "Yes, we offer in house financing in Texas only, and lenders or banks provide financing in Florida. Nationwide shipping available. Use 'Contact' for more information."},
-  {keywords: ["requirements", "what do I need", "requirement"],answer: "Valid ID, driver’s license or passport (we work with ITIN number), proof of address, and proof of income. Want to start your application? Use 'Contact' to begin."},
-  {keywords: ["pre approval","pre approved","how I can get approved","can I do online process","online buying","can I get pre approved before go to the dealer"],answer: "Yes, we can do everything online before you walk in to the dealer. Please use 'Contact' for more information."},
-  {keywords: ["first time buyer","repo","bankruptcy","credit",],answer: "We offer financing for all credit types – good, bad, first time buyer, or no credit."},
-  {keywords: ["down","down payment","money down","starting amount","initial amount"], answer: "It really depends on what you are looking for. Please use 'Contact' for more information."},
-  {keywords: ["located", "location", "address"], answer: "We are an auto broker, not a physical dealership. I work directly with my partner dealerships in Texas and Florida to help you find the best deal and vehicle option. Use 'Contact' for more information."},
-{keywords: ["shipping", "nationwide shipping", "can you send the car to my home"],answer: "Yes, we offer nationwide shipping from our partner dealership in Florida. Use 'Contact' for more information."},
-{ keywords: ["buy a car", "purchase", "get a car", "interested in a car", "want a car", "car for sale", "car to buy"], answer: "If you want to buy a car, please browse our inventory, click on the car you like, then click the 'Request information' button and fill out the form. Our team will contact you soon!" },
-{keywords: ["talk with a representative","representative","live person","chat","talk with real person","person","human","chat with a live representative","live","sales person","customer service","customer support","support"],answer: "To talk with a live representative, say 'Contact' and follow the steps. Someone will reach out to you shortly."},
-{keywords: ["what do you offer","how you guys work","who you are","how we are","explain me how it works","works","info","information"],answer: "We’re Auto Brokers — not a traditional dealership. Our job is to help you find the right vehicle based on your budget, needs, and preferences. We work as a third party, connecting you with trusted dealerships in Texas and Florida that can best assist your specific situation. Our focus is simple: we work for you, not the dealership — to make the process easier, faster, and more personalized. For more info, feel free to use 'Contact' to have one of the representatives reach out to you shortly."},  
-// Add more Q&A pairs as needed
-];
+  {
+    "keywords": ["hours", "schedule", "time", "working hours", "what time"],
+    "answer": "Our working hours are Monday to Friday, 8am to 4pm."
+  },
+  {
+    "keywords": ["services", "what do you do", "what you offer", "work you do", "jobs"],
+    "answer": "At Canto Construction LLC, we offer interior remodeling, repairs, painting, water damage restoration, vinyl flooring installation, trim work, and more. Contact us for a free quote!"
+  },
+  {
+    "keywords": ["quote", "estimate", "price", "how much", "cost"],
+    "answer": "Every project is unique. Our estimates include materials and labor. For a free quote, please use the 'Contact' button or call us at 732-710-6539."
+  },
+  {
+    "keywords": ["area", "location", "where are you", "work in", "city", "zone"],
+    "answer": "We are based in New Jersey and work in surrounding areas. Message us to check if we cover your location."
+  },
+  {
+    "keywords": ["materials", "who buys materials", "do you include materials"],
+    "answer": "Yes, all materials are included in our estimates unless you prefer to supply your own. We’ll go over everything during the quote process."
+  },
+  {
+    "keywords": ["warranty", "guarantee", "insured", "insurance", "coverage"],
+    "answer": "Yes, we offer a warranty on our work and we are fully insured for your peace of mind."
+  },
+  {
+    "keywords": ["how long", "duration", "time to finish", "how many days", "fast"],
+    "answer": "The timeline depends on the type of work. We’ll give you a clear estimate after reviewing your project details."
+  },
+  {
+    "keywords": ["payment", "how to pay", "card", "payment methods", "cash", "transfer", "check"],
+    "answer": "We accept cash, bank transfers, and checks. Ask us for available payment options."
+  },
+  {
+    "keywords": ["appointment", "schedule", "visit", "inspection", "home visit"],
+    "answer": "We can schedule a free visit to assess your project with no obligation. Use the 'Contact' button or call 732-710-6539 to book an appointment."
+  },
+  {
+    "keywords": ["contact", "talk to someone", "representative", "number", "call", "message"],
+    "answer": "To speak with us directly, call 732-710-6539 or say 'Contact' and someone from our team will get back to you shortly."
+  },
+  {
+    "keywords": ["experience", "how many years", "trust", "professional", "reliable"],
+    "answer": "Canto Construction LLC has years of experience in the construction and remodeling industry. Our work is professional, reliable, and guaranteed."
+  }
+]
 
 function getAnswer(userQuestion) {
   const lower = userQuestion.toLowerCase();

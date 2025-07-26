@@ -9,6 +9,10 @@ const defotos = {
     '/img/bathrooms/5.webp',
     '/img/bathrooms/6.webp',
     '/img/bathrooms/7.webp',
+    '/img/bathrooms/8.webp',
+    '/img/bathrooms/9.webp',
+    '/img/bathrooms/10.webp',
+    '/img/bathrooms/11.webp',
   ],
   kitchens: [
     '/img/kitchens/1.webp',
@@ -31,6 +35,11 @@ const defotos = {
     '/img/living_rooms/4.webp',
     '/img/living_rooms/5.webp',
     '/img/living_rooms/6.webp',
+    '/img/living_rooms/7.webp',
+    '/img/living_rooms/8.webp',
+    '/img/living_rooms/9.webp',
+    '/img/living_rooms/10.webp',
+    '/img/living_rooms/11.webp',
   ],
   stairs: [
     '/img/stairs/1.webp',
@@ -38,6 +47,9 @@ const defotos = {
     '/img/stairs/3.webp',
     '/img/stairs/4.webp',
     '/img/stairs/5.webp',
+    '/img/stairs/6.webp',
+    '/img/stairs/7.webp',
+    '/img/stairs/8.webp',
   ],
   remodeling: [
     '/img/remodeling/1.webp',
@@ -46,6 +58,16 @@ const defotos = {
     '/img/remodeling/4.webp',
     '/img/remodeling/5.webp',
     '/img/remodeling/6.webp',
+  ],
+  painting: [
+    '/img/painting/1.webp',
+    '/img/painting/2.webp',
+    '/img/painting/3.webp',
+    '/img/painting/4.webp',
+    '/img/painting/5.webp',
+    '/img/painting/6.webp',
+    '/img/painting/7.webp',
+    '/img/painting/8.webp',
   ],
 }
 

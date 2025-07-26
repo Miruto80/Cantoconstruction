@@ -9,6 +9,7 @@ const categories = [
   { name: 'Living_Rooms', folder: 'living_rooms' },
   { name: 'Stairs', folder: 'stairs' },
   { name: 'Remodeling', folder: 'remodeling' },
+  { name: 'Painting', folder: 'painting' },
 ]
 
 export default function Gallery() {
