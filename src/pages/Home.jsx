@@ -178,6 +178,10 @@ export default function Home() {
   <p className="mb-2">
     📧 <a href="mailto:cantoconstructionllc27@gmail.com">cantoconstructionllc27@gmail.com</a>
   </p>
+  <p className="mb-2">
+     👍 <a href="https://www.google.com/search?client=safari&sca_esv=21b8fdcecfe5527b&hl=en-us&sxsrf=AE3TifNJhWv_CYntg6wspT5Scrb3r92Fvw:1753494049357&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E8jddUIHIQBVdNXSmw8LlD9VMT42V3deJKvyDiZKxMaIHywGI7Itymrdlr8g0rWpAVLU7_u-3kC8Os-dVAw64vzVdw2dSk9Dbh1lN_Z0EwFv9GR5hA%3D%3D&q=Canto+Construction+LLC+Reviews&sa=X&ved=2ahUKEwi22bWvstmOAxVjSzABHbY4G1MQ0bkNegQIHxAC&biw=1440&bih=767&dpr=1#lrd=0xbc4e39b6ff86dd9:0xb6d7e56c55340536,3,,,," target='blank'>
+    Leave us a review</a>
+  </p>
   <p className="mb-0">
     📍 Proudly serving <strong>New Jersey</strong>
   </p>
