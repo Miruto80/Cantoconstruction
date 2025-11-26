@@ -19,7 +19,7 @@ function Footer() {
             <div id="legal-content" className={showLegal ? '' : 'hidden'}>
                 <p className="mb-1">&copy; Cantoconstrucction 2025</p>
                 <p className="mb-1">All rights reserved. The images are used with permission.</p>
-                <p className="mb-0">Cantoconstrucction.com operates exclusively as a car locator and intermediary between buyers and dealers in Texas and Florida. We do not sell vehicles directly. All pricing, financing terms, and warranties are determined and managed by the individual dealer.</p>
+                <p className="mb-0">Cantocrostruction.com operates as a construction company specializing in remodeling and general contracting.</p>
             </div>
         </div>
     </footer>
